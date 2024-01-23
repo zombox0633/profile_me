@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #fff;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --color-black: #1a1a1a;
+  --color-dark-green: #042825;
+  --color-dark-slate-green: #244341;
+  --color-feldgrau-green: #435e5c;
+  --color-ash-gray: #a1afae;
+  --shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 0px 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+@layer base {
+  * {
+    @apply m-0 p-0 box-border;
+  }
+
+  body {
+    @apply background__color_df max-w-[100vw] block min-h-[300vw] text-white font-openSans;
+  }
+
+  h1 {
+    @apply text-[4em] text-center;
+  }
+
+  button {
+    @apply button_df__transition px-[1.2em] py-[0.6em] border border-solid border-transparent rounded-lg text-[1em] bg-grayTen font-semibold text-white
+    hover:cursor-pointer hover:translate-y-[-1px] active:translate-y-0;
+  }
+}
+
+@layer components {
+  /* nav__text */
+  .nav__text{
+    @apply text-[1.4em]
+  }
+
+  /* background-color */
+  .background__color_df {
+    background: var(--color-dark-green);
+  }
+
+  /* button */
+  .button_df__transition {
+    transition:
+      border-color 0.25s,
+      box-shadow 0.25s;
+  }
+
+  /* border hover effect */
+  .hover__border_effect{
+    cursor: pointer;
+  }
+  .hover__border_effect:after {
+    display: block;
+    content: "";
+    width: auto;
+    border-bottom: solid 2px #fff;
+    transform: scaleX(0);
+    transform-origin:right;
+    transition: transform 0.25s ease-in-out;
+  }
+
+  .hover__border_effect:hover::after {
+    transform: scaleX(1);
+    transform-origin:left;
+  }
+
+  /*typewriter*/
+  .typewriter__animation {
+    animation:
+      typing 2s steps(40, end),
+      blink 1s step-end infinite;
+  }
+
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+}
+
+/*
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
