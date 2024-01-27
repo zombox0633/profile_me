@@ -1,13 +1,12 @@
-import React from "react";
-
 function NavBar() {
   return (
-    <div className=' fixed top-0 inset-0 w-screen h-[10rem] bg-transparent z-40'>
-      <div className="relative flex justify-between items-center h-full mx-2 px-12">
-        <div className=" w-32 text-center">
-          <h2 className='text-[2em]'>Test</h2>
+    <div className='fixed left-0 w-[20rem] h-screen bg-transparent z-20'>
+      <div className="relative flex flex-col h-full mx-8 my-4">
+        <div className="text-start">
+          <h2>zombox.io</h2>
         </div>
-        <div className="flex justify-between items-center w-[28rem] mr-12 nav__text">
+        <div className="flex flex-col justify-between items-start nav__text mt-56">
+          <a href="">Home</a>
           <a href="">Profile</a>
           <a href="">Educational</a>
           <a href="">Skills</a>

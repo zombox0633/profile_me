@@ -6,7 +6,6 @@ https://bb.agency/?utm_source=dribble&utm_medium=boosted&utm_campaign=bb+agency
 
 https://www.youtube.com/watch?v=hYv6BM2fWd8&t=412s
 
-https://artboardartisan.com/
 https://abduzeedo.com/
 
 typewriter react
