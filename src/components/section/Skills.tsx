@@ -2,7 +2,7 @@ import React from "react";
 
 function Skills() {
   return (
-    <section className='h-screen py-8'>
+    <section className='snap-always snap-center h-screen p-8'>
       <div>
         <h3>Skills</h3>
       </div>

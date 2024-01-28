@@ -4,7 +4,7 @@ import { copyToClipboard } from "../../helpers";
 
 function Contact() {
   return (
-    <div className='h-screen py-8'>
+    <div className='snap-always snap-center h-screen p-8'>
       <div>
         <h3>Contact</h3>
       </div>

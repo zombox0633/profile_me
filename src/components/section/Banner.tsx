@@ -1,5 +1,6 @@
 import Typewriter from "../Typewriter";
 
+
 function Banner() {
   const toRotate = [
     "Frontend Developer.",
@@ -10,7 +11,7 @@ function Banner() {
   ];
 
   return (
-    <section className='grid__container_col h-screen py-8'>
+    <section className='grid__container_col snap-always snap-center h-screen p-8'>
       <div className='col-start-3 col-end-7 flex items-center '>
         <div>
           <span>hi</span>

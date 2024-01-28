@@ -1,9 +1,9 @@
 import ImageMe from "../../img/ImageMe.jpg";
-import cv from "../../cv/Chayatron_Resume.pdf";
+import Resume from "../../cv/Chayatron_Resume.pdf";
 
 function Profile() {
   return (
-    <section className='h-screen py-8'>
+    <section className='snap-always snap-center h-screen p-8'>
       <div>
         <h3>Profile</h3>
       </div>
@@ -23,7 +23,7 @@ function Profile() {
               take on challenging projects or tasks.
             </p>
             <div className='mt-8'>
-              <a href=''>
+              <a href={Resume}>
                 <button>Download CV</button>
               </a>
             </div>

@@ -1,8 +1,6 @@
-import React from "react";
-
 function Educational() {
   return (
-    <section className='h-screen py-8'>
+    <section className='snap-always snap-center h-screen p-8'>
       <div>
         <h3>Educational</h3>
       </div>

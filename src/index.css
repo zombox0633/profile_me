@@ -140,7 +140,7 @@
   }
 
   .layout__myapp {
-    @apply transition__bg_myapp max-w-[100vw] block min-h-[100vw] overflow-x-hidden;
+    @apply transition__bg_myapp block overflow-x-hidden;
   }
 
   /* nav__text */
