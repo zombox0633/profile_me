@@ -35,13 +35,17 @@
   }
 
   h1 {
-    @apply text-[3.6em] text-center;
+    @apply text-[1.4em] sm:text-[2.4em] md:text-[2.6em] xl:text-[3em] 2xl:text-[3.6em] text-center;
   }
   h2 {
     @apply text-[2.2em];
   }
   h3 {
     @apply text-[1.3rem];
+  }
+
+  a{
+    @apply focus:outline focus:outline-offset-4 focus:outline-4 focus:outline-white
   }
 
   button {
@@ -81,7 +85,7 @@
 
   /* button */
   .button_df {
-    @apply button_df__transition px-[1.2em] py-[0.6em] border border-solid border-transparent rounded-lg text-[1em] 
+    @apply button_df__transition px-[1.2em] py-[0.6em] border border-solid border-transparent rounded-lg text-sm xl:text-[1em] 
     bg-grayTen font-semibold text-white
     hover:cursor-pointer hover:translate-y-[-1px] hover:shadow-lg active:translate-y-0
     focus:outline focus:outline-offset-4 focus:outline-4 focus:outline-white;
@@ -101,7 +105,7 @@
     display: block;
     content: "";
     width: auto;
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 2.5px #fff;
     transform: scaleX(0);
     transform-origin: right;
     transition: transform 0.25s ease-in-out;

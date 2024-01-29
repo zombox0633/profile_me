@@ -2,7 +2,6 @@ import { useCallback, useEffect, useRef, useState } from "react";
 
 function useScrollControl() {
   const [scrollY, setScrollY] = useState<number>(0);
-  const [backgroundColor, setBackgroundColor] = useState<string>("bg-darkGreen");
 
   const divRef = useRef<HTMLDivElement>(null);
 
@@ -45,33 +44,10 @@ function useScrollControl() {
     };
   }, []);
 
-  useEffect(() => {
-    switch (true) {
-      case scrollY < 777: //0-1012
-        setBackgroundColor("bg-darkGreen");
-        break;
-      case scrollY >= 777 && scrollY < 1666: //1012->2024
-        setBackgroundColor("bg-darkSlateGreen");
-        break;
-      case scrollY >= 1666 && scrollY < 2444: //2024-3036
-        setBackgroundColor("bg-feldgrauGreen");
-        break;
-      case scrollY >= 2444 && scrollY < 3666: //3036-4048
-        setBackgroundColor("bg-battleshipGray");
-        break;
-      case scrollY > 3666: //4048->
-        setBackgroundColor("bg-ashGray");
-        break;
-      default:
-        setBackgroundColor("bg-darkGreen");
-        break;
-    }
-  }, [scrollY]);
 
   return {
     scrollY,
     divRef,
-    backgroundColor,
     handleScrollToPoint
   };
 }

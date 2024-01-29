@@ -5,10 +5,10 @@ import { copyToClipboard } from "../../helpers";
 function Contact() {
   return (
     <div className='snap-always snap-center h-screen p-8'>
-      <div>
+      <div className="hidden sm:block">
         <h3>Contact</h3>
       </div>
-      <div className='grid__container_col h-[70vh] mt-16'>
+      <div className='grid__container_col h-[70vh] mt-8'>
         <div className=' col-start-2 col-end-5 flex items-center justify-between '>
           <a
             href='https://github.com/zombox0633'
