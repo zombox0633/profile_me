@@ -1,8 +1,7 @@
 import Banner from "./section/Banner";
+import Educational from "./section/Educational";
 import Profile from "./section/Profile";
 import Skills from "./section/Skills";
-import Educational from "./section/Educational";
-import Contact from "./section/Contact";
 
 type MainContent = {
   scrollY: number;
@@ -20,7 +19,6 @@ function MainContent({ divRef }: MainContent) {
       <Profile />
       <Educational />
       <Skills />
-      {/* <Contact /> */}
     </div>
   );
 }
