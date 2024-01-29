@@ -1,5 +1,3 @@
-import React from "react";
-
 function Skills() {
   return (
     <section className='snap-always snap-center h-screen py-8 sm:p-8'>
