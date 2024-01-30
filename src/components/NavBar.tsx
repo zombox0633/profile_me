@@ -8,13 +8,13 @@ type NavBarType = {
 
 function NavBar({ handleScrollToPoint }: NavBarType) {
   return (
-    <div className="hidden lg:block">
-      <div className='fixed left-0 w-[20rem] h-screen bg-transparent z-20'>
-        <div className='relative flex flex-col justify-between h-full mx-8 my-4'>
+    <div>
+      <div className='fixed lg:left-0 lg:w-[20rem] lg:h-screen my-4 lg:my-0 lg:bg-transparent z-20'>
+        <div className='relative flex lg:flex-col justify-between lg:h-full lg:mx-8 lg:my-4'>
           <div className='text-start cursor-pointer'>
-            <h2>zombox.io</h2>
+            <h2 className="text-2xl lg:text-[2.2em]">zombox.io</h2>
           </div>
-          <div className='nav__text flex flex-col justify-between items-start '>
+          <div className='nav__text hidden lg:flex flex-col justify-between items-start 2xl:mb-32'>
             <a
               href='#'
               onClick={() => handleScrollToPoint(0)}
@@ -51,7 +51,7 @@ function NavBar({ handleScrollToPoint }: NavBarType) {
             Contact
           </a> */}
           </div>
-          <div className='flex justify-between w-40 mb-16'>
+          <div className=' hidden lg:flex justify-between w-40 lg:mb-16'>
             <a
               href='https://github.com/zombox0633'
               target='_blank'

@@ -172,9 +172,6 @@
 
   /* Skills style layout*/
   .div__skills_layout {
-    @apply flex flex-row;
-  }
-  .div__skills_layout img {
-    @apply mx-1;
+    @apply flex flex-wrap gap-2 lg:w-[42rem] xl:w-[44rem] 2xl:w-[50rem];
   }
 }

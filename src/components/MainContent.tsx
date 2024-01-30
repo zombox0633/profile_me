@@ -1,4 +1,5 @@
 import Banner from "./section/Banner";
+import Contact from "./section/Contact";
 import Educational from "./section/Educational";
 import Profile from "./section/Profile";
 import Skills from "./section/Skills";
@@ -19,6 +20,7 @@ function MainContent({ divRef }: MainContent) {
       <Profile />
       <Educational />
       <Skills />
+      <Contact/>
     </div>
   );
 }

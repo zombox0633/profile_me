@@ -1,3 +1,5 @@
+import { ToastContainer } from "react-toastify";
+
 import MainContent from "./components/MainContent";
 import NavBar from "./components/NavBar";
 import useBackgroundColor from "./hook/useBackgroundColor";
@@ -9,6 +11,7 @@ function App() {
   const { backgroundColor } = useBackgroundColor({ scrollY });
   return (
     <div className={`layout__myapp ${backgroundColor}`}>
+      <ToastContainer/>
       <div className='grid_position__app w-full h-full pl-8 overflow-x-hidden'>
         {/* <p className=" fixed left-0 bottom-0">{scrollY}</p> */}
         <NavBar handleScrollToPoint={handleScrollToPoint} />
