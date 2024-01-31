@@ -12,7 +12,7 @@ function NavBar({ handleScrollToPoint }: NavBarType) {
       <div className='fixed lg:left-0 lg:w-[20rem] lg:h-screen my-4 lg:my-0 lg:bg-transparent z-20'>
         <div className='relative flex lg:flex-col justify-between lg:h-full lg:mx-8 lg:my-4'>
           <div className='text-start cursor-pointer'>
-            <h2 className="text-2xl lg:text-[2.2em]">zombox.io</h2>
+            <h2 className="text-2xl lg:text-[2.2em]">zombox</h2>
           </div>
           <div className='nav__text hidden lg:flex flex-col justify-between items-start 2xl:mb-32'>
             <a
