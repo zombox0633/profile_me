@@ -11,7 +11,7 @@ function Profile() {
         <div className='md:grid__container_col'>
           <div className="md:col-start-1 md:col-end-3 flex justify-center mb-10 sm:mb-16">
             <div className='w-40 sm:w-48 xl:w-64 2xl:w-[18rem] h-56 sm:h-[21rem] xl:h-auto overflow-hidden rounded-full shadow-2xl'>
-              <img src={ImageMe} alt='me' className='object-center' />
+              <img src={ImageMe} alt='me' className='object-center' loading="eager" />
             </div>
           </div>
           <div className='md:col-start-4 md:col-end-7 flex items-center h-[18rem] sm:h-auto'>
