@@ -13,14 +13,14 @@ function MainContent({ divRef }: MainContent) {
   return (
     <div
       ref={divRef}
-      className=' col-start-1 sm:col-start-2 lg:col-start-3 col-end-9 
-      snap-y snap-mandatory scroll-smooth h-screen overflow-y-scroll overflow-x-hidden'
+      className=' col-start-1 col-end-9 h-screen snap-y 
+      snap-mandatory overflow-x-hidden overflow-y-scroll scroll-smooth sm:col-start-2 lg:col-start-3'
     >
       <Banner />
       <Profile />
       <Educational />
       <Skills />
-      <Contact/>
+      <Contact />
     </div>
   );
 }

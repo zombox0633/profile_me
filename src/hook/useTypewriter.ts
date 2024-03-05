@@ -22,7 +22,7 @@ function useTypewriter({ messageSet, period = 2000 }: useTypewriterType) {
         setText(fullText.substring(0, text.length + 1));
         setTypingDelay(200);
       }
-  
+
       if (!isDeleting && text === fullText) {
         setIsDeleting(true);
         setTypingDelay(period || 2000);
@@ -34,7 +34,7 @@ function useTypewriter({ messageSet, period = 2000 }: useTypewriterType) {
         const newDelay = isDeleting ? 100 : 200;
         setTypingDelay(newDelay);
       }
-    }
+    };
 
     const timer = setTimeout(handleTyping, typingDelay);
 

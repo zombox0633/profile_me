@@ -44,11 +44,10 @@ function useScrollControl() {
     };
   }, []);
 
-
   return {
     scrollY,
     divRef,
-    handleScrollToPoint
+    handleScrollToPoint,
   };
 }
 

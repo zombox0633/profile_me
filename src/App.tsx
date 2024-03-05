@@ -11,8 +11,8 @@ function App() {
   const { backgroundColor } = useBackgroundColor({ scrollY });
   return (
     <div className={`layout__myapp ${backgroundColor}`}>
-      <ToastContainer/>
-      <div className='grid_position__app w-full h-full pl-8 overflow-x-hidden'>
+      <ToastContainer />
+      <div className='grid_position__app h-full w-full overflow-x-hidden pl-8'>
         {/* <p className=" fixed left-0 bottom-0">{scrollY}</p> */}
         <NavBar handleScrollToPoint={handleScrollToPoint} />
         <MainContent scrollY={scrollY} divRef={divRef} />

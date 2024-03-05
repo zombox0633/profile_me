@@ -13,7 +13,7 @@ export default {
         feldgrauGreen: "#435E5C",
         battleshipGray: "#728785",
         ashGray: "#A1AFAE",
-        arsenic:"#3B444B", 
+        arsenic: "#3B444B",
         amber: "#FFBE0B",
       },
     },

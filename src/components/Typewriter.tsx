@@ -9,7 +9,7 @@ function Typewriter({ text }: TypewriterType) {
 
   return (
     <div className='h-24'>
-      <h1 className='typewriter__animation pr-2 border-r-[0.08em] border-solid border-white whitespace-pre overflow-hidden'>
+      <h1 className='typewriter__animation overflow-hidden whitespace-pre border-r-[0.08em] border-solid border-white pr-2'>
         {typewriterText}
       </h1>
     </div>

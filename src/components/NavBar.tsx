@@ -9,12 +9,12 @@ type NavBarType = {
 function NavBar({ handleScrollToPoint }: NavBarType) {
   return (
     <div>
-      <div className='fixed lg:left-0 lg:w-[20rem] lg:h-screen my-4 lg:my-0 lg:bg-transparent z-20'>
-        <div className='relative flex lg:flex-col justify-between lg:h-full lg:mx-8 lg:my-4'>
-          <div className='text-start cursor-pointer'>
-            <h2 className="text-2xl lg:text-[2.2em]">zombox</h2>
+      <div className='fixed z-20 my-4 lg:left-0 lg:my-0 lg:h-screen lg:w-[20rem] lg:bg-transparent'>
+        <div className='relative flex justify-between lg:mx-8 lg:my-4 lg:h-full lg:flex-col'>
+          <div className='cursor-pointer text-start'>
+            <h2 className='text-2xl lg:text-[2.2em]'>zombox</h2>
           </div>
-          <div className='nav__text hidden lg:flex flex-col justify-between items-start 2xl:mb-32'>
+          <div className='nav__text hidden flex-col items-start justify-between lg:flex 2xl:mb-32'>
             <a
               href='#'
               onClick={() => handleScrollToPoint(0)}
@@ -51,13 +51,13 @@ function NavBar({ handleScrollToPoint }: NavBarType) {
             Contact
           </a> */}
           </div>
-          <div className=' hidden lg:flex justify-between w-40 lg:mb-16'>
+          <div className=' hidden w-40 justify-between lg:mb-16 lg:flex'>
             <a
               href='https://github.com/zombox0633'
               target='_blank'
               rel='noopener noreferrer'
-              className='button_df__transition flex justify-center items-center w-10 h-10 rounded-2xl  
-              hover:shadow-lg hover:translate-y-[-1px] active:translate-y-0 focus:outline focus:outline-offset-4 focus:outline-4 focus:outline-white'
+              className='button_df__transition flex h-10 w-10 items-center justify-center rounded-2xl  
+              hover:translate-y-[-1px] hover:shadow-lg focus:outline focus:outline-4 focus:outline-offset-4 focus:outline-white active:translate-y-0'
             >
               <FontAwesomeIcon icon={faGithub} size='xl' color={"white"} />
             </a>
@@ -65,14 +65,14 @@ function NavBar({ handleScrollToPoint }: NavBarType) {
               href='https://www.linkedin.com/in/chayathorn-meesil'
               target='_blank'
               rel='noopener noreferrer'
-              className='button_df__transition flex justify-center items-center w-10 h-10 rounded-2xl 
-              hover:shadow-lg hover:translate-y-[-1px] active:translate-y-0 focus:outline focus:outline-offset-4 focus:outline-4 focus:outline-white'
+              className='button_df__transition flex h-10 w-10 items-center justify-center rounded-2xl 
+              hover:translate-y-[-1px] hover:shadow-lg focus:outline focus:outline-4 focus:outline-offset-4 focus:outline-white active:translate-y-0'
             >
               <FontAwesomeIcon icon={faLinkedin} size='xl' color={"white"} />
             </a>
             <button
               onClick={() => copyToClipboard("chayathorn.meesil@gmail.com")}
-              className='flex justify-center items-center w-10 h-10 rounded-2xl bg-transparent'
+              className='flex h-10 w-10 items-center justify-center rounded-2xl bg-transparent'
             >
               <FontAwesomeIcon icon={faGooglePlusG} size='xl' color={"white"} />
             </button>
