@@ -1,5 +1,5 @@
 import ImageMe from "../../img/ImageMe.jpg";
-import Resume from "../../cv/Chayatron_Resume.pdf";
+import Resume from "../../cv/Chayatron_CV.pdf";
 
 function Profile() {
   return (

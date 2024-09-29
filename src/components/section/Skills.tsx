@@ -8,7 +8,7 @@ function Skills() {
       </div>
       <div className=' flex flex-col justify-center sm:mt-6 2xl:mt-20'>
         <div className='grid__container_col'>
-        <div className='grid__container_row col-start-1 col-end-7 h-[75vh] sm:gap-2 2xl:col-start-2'>
+          <div className='grid__container_row col-start-1 col-end-7 h-[75vh] sm:gap-2 2xl:col-start-2'>
             <div className=' my-2 flex items-center'>
               <div>
                 <h3 className=' my-4 text-[1.2em] sm:hidden'>Tech Stack</h3>
