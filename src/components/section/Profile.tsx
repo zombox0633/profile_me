@@ -1,7 +1,8 @@
 import ImageMe from "../../img/ImageMe.jpg";
-import Resume from "../../cv/ChayatronMeesilCV_SoftwareEngineer.pdf";
+import Resume from "../../cv/ChayatornMeesil_FullStack.pdf";
 
 function Profile() {
+  
   return (
     <section className='flex h-screen snap-center snap-always flex-wrap gap-2 py-8 pr-8 lg:p-8'>
       <div>
